@@ -1,67 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
     <title>Academia Podium</title>
-    <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-</head>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon2.png"> 
+</head> 
 
-<body>
-    <header>
-        <img src="./Imagens/logo.png" alt="Logo Academia">
-        <div class="menuRodape">
-            <li><a href="contato.html"><strong>Contato</strong></a></li>
-            <li><a href="mural1.html"><strong>Mural dos Alunos</strong></a></li>
-        </div>
-    </header>
+<body id="home">
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">início</a></li>  
+                        <li class="scroll"><a href="#services">temos</a></li>
+                        <li class="scroll"><a href="#about">sobre</a></li> 
+                        <li class="scroll"><a href="#our-team">equipe</a></li>
+						<li class="scroll"><a href="#portfolio">mural</a></li>
+                        <li class="scroll"><a href="#pricing">planos</a></li>
+                        <li class="scroll"><a href="#contact-us">contato</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
 
-    <section>
-        <img src="./Imagens/ginastica.png">
-        <div class="corpos">
-            <div class="corpo">
-                <h2>A Podium</h2>
-                <p>Fundada a mais de 20 anos, a Academia Podium sempre se preocupou em trazer saúde e bem estar aos seus
-                    alunos, que contam com o apoio de profissionais bem preparados para melhor lhe atender, temos
-                    diversas modalidades de atividades, incluindo:<br>
-                <div class="modalidades"><b>*MUSCULAÇÃO PARA TODAS IDADES;<br> *TREINAMENTO PERSONALIZADO;<br>
-                        *TREINAMENTO FUNCIONAL;<br> *AULAS DE ZUMBA;<br> *AERÓBICA</b></div>
-                </p>
-                <p>A academia conta com profissionais qualificados como: nutricionistas e professores
-                    de educação física, aptos a atenderem pessoas de todas as idades que queiram praticar atividades
-                    físicas, tanto para fins estéticos, terapêuticos ou capacitadores.</p>
+    <section id="hero-banner">
+             <div class="banner-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                 
+                                    <h2>Mais <b>FORTE</b> do que nunca</h2>
+                                    <p>Um lugar para investir na saúde</p>
+                                    <!-- <a class="btn btn-primary btn-lg" href="#">Start Now</a> -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section><!--/#main-slider-->
+
+ <section id="services" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">O que temos para oferecer</h2>
+                <!-- <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> -->
             </div>
 
-            <div class="corpo">
-                <h2>Nossa Missão</h2>
-                <p>Buscar a excelência em serviços, através de um ambiente agradável, oferecendo profissionais felizes,
-                    que proporcionam aos alunos bem-estar físico e mental.</p>
-                    <img src="./Imagens/training.png">
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-futbol-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Aerobica</h4>
+                                <p>Temos esteiras e bicicletas para lhe proporcionar o que você precisa para sua aerobica</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-compass"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Instrutores</h4>
+                                <p>A academia conta com profissionais qualificados, aptos a atenderem pessoas de todas as idades que queiram praticar atividades físicas.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-database"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Personal Trainer</h4>
+                                <p>Contamos com profissionais de educação física qualificados e esforçados para lhe proporcionar sempre o melhor.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bar-chart"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Nutricionista</h4>
+                                <p>A academia podium tem convenio com uma excelente nutricionista que poderá lhe orientar para proporcionar o resultado desejado.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ambiente</h4>
+                                <p>Nosso espaço é devidamente arejado e aberto o que proporciona a sensação de estar treinando ao ar livre, é incrível!</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bullseye"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Cafézinho</h4>
+                                <p>É claro que isso não poderia faltar, venha nos fazer uma visita para conhecer a academia e tomar um cafézinho.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+  
+ <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Quem nós somos</h2>
+                <!-- <p class="wow fadeInDown">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eos, illum esse alias soluta quod velit expedita ad a. Officia eius debitis totam at nisi saepe ab repellendus reiciendis beatae!</p> -->
             </div>
 
-            <div class="corpo">
-                <h1>Nossos Valores</h1>
-                <ul>
-                    <li><b>Comprometimento ético com os nossos alunos;</b></li>
-                    <li><b>Excelência no atendimento;</b></li>
-                    <li><b>Oferecer preço justo pelo serviço prestado;</b></li>
-                    <li><b>Preocupação com a saúde, bem-estar e qualidade de vida de nossos alunos;</b></li>
-                    <li><b>Desenvolver estratégias para capacitação contínua dos nossos profissionais.</b></li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <img class="img-responsive" src="images/about.png" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">A Podium</h3>
+                    <p>Fundada a mais de 20 anos, a Academia Podium sempre se preocupou em trazer saúde e bem estar aos seus alunos, que contam com o apoio de profissionais bem preparados para melhor lhe atender, temos diversas modalidades de atividades, incluindo:</p>
+<ul class="listarrow">
+<li><i class="fa fa-angle-double-right"></i>MUSCULAÇÃO PARA TODAS IDADES</li>
+<li><i class="fa fa-angle-double-right"></i>TREINAMENTO PERSONALIZADO</li>
+<li><i class="fa fa-angle-double-right"></i>TREINAMENTO FUNCIONAL</li>
+<li><i class="fa fa-angle-double-right"></i>AULAS DE ZUMBA</li> 
+<li><i class="fa fa-angle-double-right"></i>AERÓBICA</li>
+</ul>
+ 
+
+                </div>
             </div>
         </div>
-    </section>
+    </section><!--/#about-->
 
-    <footer>
-        <div class="foot">
-            Copyright © 2021 - Stephan Simon.
+     <section id="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Nossa equipe</h2>
+            </div>
+			
+			 	
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Everton Becker</h3>
+                            <span>Proprietário</span> 
+                        </div> 
+                        <!-- <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Tatiana Junqueira</h3>
+                            <span>Personal Trainer / Instrutora</span> 
+                        </div> 
+                        <!-- <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Adjavan Mancia</h3>
+                            <span>Personal Trainer / Instrutora</span> 
+                        </div> 
+                        <!-- <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Stefani Bruxel</h3>
+                            <span>Personal Trainer / Instrutora</span> 
+                        </div> 
+                        <!-- <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/05.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Stephan Simon</h3>
+                            <span>Instrutor</span> 
+                        </div> 
+                        <!-- <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </footer>
+    </section><!--/#our-team-->
+
+  <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Nosso mural</h2>
+            </div>
+
+            <div class="text-center">
+                <ul class="portfolio-filter" style="display:none">
+                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
+                    <li><a href="#" data-filter=".designing">Designing</a></li>
+                    <li><a href="#" data-filter=".mobile">Mobile App</a></li>
+                    <li><a href="#" data-filter=".development">Development</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/2.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/3.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/4.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/7.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/7.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/8.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a target="_blank" class="preview" href="images/portfolio/8.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Nossos planos</h2>
+                <!-- <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$ 60,00
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Um dia por semana
+                                </div>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=555180583898">Obtê-lo agora!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$ 65,00
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    dois dias por semana
+                                </div>
+                            </li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=555180583898">Obtê-lo agora!</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$ 70,00
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    três dias por semana
+                                </div>
+                            </li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=555180583898">Obtê-lo agora!</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <ul class="pricing featured">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$ 80,00
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Livre
+                                </div>
+                            </li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="https://web.whatsapp.com/send?phone=555180583898">Obtê-lo agora!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#pricing-->
+   
+
+    <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Entre em contato conosco</h2>
+            </div>
+        </div>
+    </section><!--/#contact-us-->
+
+
+    <section id="contact">
+        <div>
+            <a target="_blank" href="https://web.whatsapp.com/send?phone=555180583898"><img src="./images/contact/whatsapp.png" alt="whatsapp"></a>
+            <a target="_blank" href="https://www.facebook.com/podium.estrela"><img src="./images/contact/facebook.png" alt="facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/academiapodiumestrela/"><img src="./images/contact/instagram.png" alt="instagram"></a>
+        </div>
+   </section><!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2021 - Stephan Simon.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a target="_blank" href="https://www.facebook.com/stephan.simon.35/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/stephan-simon-418879211/"><i class="fa fa-linkedin"></i></a></li> 
+                        <li><a target="_blank" href="https://github.com/stephanrichardsimon"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
 </body>
-
 </html>
